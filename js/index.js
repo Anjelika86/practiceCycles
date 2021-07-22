@@ -49,11 +49,11 @@ for (let i = 10; i <= 50; i++) {
 //   }
 // } while (true);
 
-let result = 0;
-for (let i = 1; i <= 100; i++) {
-  result += i;
-}
-console.log(result);
+// let result = 0;
+// for (let i = 1; i <= 100; i++) {
+//   result += i;
+// }
+// console.log(result);
 
 // let counter = 1;
 // let result = 1;
@@ -61,23 +61,7 @@ console.log(result);
 //   counter++;
 //   if ((result += counter)) {
 //   }
-//   // if (result < 5050) {
-//   //   continue;
-//   // }
-//   console.log(result);
-
-//   if (counter >= 100) {
-//     break;
-//   }
-// }
-
-// let counter = 1;
-// let result = 1;
-// do {
-//   counter++;
-//   if ((result += counter)) {
-//   }
-//   if (result < 5050) {
+//   if (counter < 100) {
 //     continue;
 //   }
 //   console.log(result);
@@ -85,7 +69,23 @@ console.log(result);
 //   if (counter >= 100) {
 //     break;
 //   }
-// } while (true);
+// }
+
+let counter = 1;
+let result = 1;
+do {
+  counter++;
+  if ((result += counter)) {
+  }
+  if (counter < 100) {
+    continue;
+  }
+  console.log(result);
+
+  if (counter >= 100) {
+    break;
+  }
+} while (true);
 
 // let result1 = 6;
 // while (true) {
